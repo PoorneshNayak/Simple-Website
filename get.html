@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getpaidnow</title>
+    <link rel="stylesheet" href="get.css">
+</head>
+
+<body>
+    <div class="nav">
+        <img src="Image/getpaid.png">
+        <div class="menu">
+            <li><a href="">About</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+        <button class="btn"><a href="#">Get Started</a></button>
+        <li onclick = showtopnav()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <div class="topnav">
+            <li onclick = hidetopnav()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <a href="#about">About</a>
+            <a href="#lorem ipsum">Lorem ipsum</a>
+            <a href="#lorem ipsum">Lorem ipsum</a>
+            <a href="#contact">Contact</a>
+            <a href="#"><div class="bun">Get Started</div></a>
+        </div>
+
+        <script>
+            function showtopnav() {
+                const topnav = document.querySelector('.topnav')
+                topnav.style.display = 'flex'
+            }
+
+            function hidetopnav() {
+                const topnav = document.querySelector('.topnav')
+                topnav.style.display = 'none'
+            }
+        </script>
+    </div>
+    
+    <div class="container">
+        <div class="home">
+            <div class="main">
+                <h3>WELCOME TO GETPAIDNOW</h3>
+                <h1>Give That <br> Payday Feeling</h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text eversince the 1500s, when an unknown printer took a galley
+                </p>  
+                <div class="button">
+                    <div class="playstore">
+                        <a href="https://play.google.com">Get in Play Store</a>
+                    </div>
+                    <div class="appstore">
+                        <a href="https://www.apple.com">Get in App Store</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="image">
+                <img src="Image/bg3.png">
+            </div>
+        </div>
+        <div class="about">
+            <h3>About</h3>
+            <div class="about1">  
+                <img src="Image/pic.png">
+            </div>
+        </div>
+        <div class="lorem">
+            <div class="lorem1">
+                <h2>Lorem Ipsum is simply</h2>
+                <h3>dummy text of the</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                    Aldus PageMaker including versions of Lorem Inshore Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                    an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                    not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </p>
+            </div>     
+        </div>
+        <div class="ipsum">
+            <div class="mobile">
+                <img src="Image/mobile.png">
+            </div>
+            <div class="ipsum1">
+                <h2>Lorem Ipsum is Simple</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the
+                    1500s, when an unknown printer took a galley
+                </p>
+                <div class="load">
+                    <div class="playstore">
+                        <img src="Image/playstore.png">
+                    </div>
+                    <div class="appstore">
+                        <img src="Image/app store.png">
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="contact">
+            <div class="contact1">
+                <div class="part1">
+                    <img src="Image\contact.jpeg">
+                    <h3>Contact Us</h3>
+                    <h2>Let's talk about<br>Love to hear from you!
+                    </h2>
+                </div>
+                <div class="part2">
+                    <div class="box1">
+                        <img src="Image/location.jpeg">
+                        <h3>Our Location</h3>
+                        <p>Lorem Ipsum is simply
+                            dummy text of the -6700
+                        </p>
+                    </div>
+                    <div class="box2">
+                        <img src="Image/mail.jpeg">
+                        <h3>How Can We Help?</h3>
+                        <p>info@yourdomain.com<br>info@yourdomain.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact2">
+                <form>
+                    <h2>Send a message</h2>
+                    <div class="rectangle">
+                        <h6>Full Name</h6>
+                        <input type="text" placeholder="Enter Full Name" id="contact-name" onkeyup="validateName()">
+                        <span id="name-error"></span>
+                        <h6>Email</h6>
+                        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                        <h6>Phone Number</h6>
+                        <input type="tel" placeholder="Enter Phone Number" id="contact-phone" onkeyup="validatePhone()">
+                        <span id="phone-error"></span>
+                        <h6>Message</h6>
+                        <input type="message" placeholder="Add message" id="contact-message" onkeyup="validateMessage()">
+                        <span id="message-error"></span>
+                        <button class="btnn" onclick="return validateForm()">Send a message</button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+        <script src="get.js"></script>
+        <div class="contact3">
+            <div class="icon">
+                <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.google.com"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="https://www.skype.com"><ion-icon name="logo-skype"></ion-icon></a>
+            </div>
+            <script src="https:unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+            <h3><br>About &nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp Lorem Ipsum &nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp Lorem Ipsum &nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp Contact</h3>
+            <div class="box4">
+                <div class="playstore">
+                    <img src="Image/playstore.png">
+                </div>
+                <div class="appstore">
+                    <img src="Image/app store.png">
+                </div>
+            </div>
+            <div class="box3">
+                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the </h4>
+                <h5>Lorem Ipsum@is simply dummy text of the printing.com</h5>
+            </div>           
+        </div>
+    </div>  
+</body>
+</html>

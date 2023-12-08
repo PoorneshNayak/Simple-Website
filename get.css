@@ -1,0 +1,1382 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    width: 50%;
+    height: 70%;
+    top: 0;
+    right: 0;
+    padding-top: 50px;
+    line-height: 30px;
+    z-index: 999;
+    background-color: #00d2c45d;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+  
+.topnav li {
+    top: 0;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    text-align: center;
+}
+
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+}
+
+.topnav a:hover {
+    background-color: rgba(0, 0, 0, 0.226);
+    color: bold white;
+    cursor: pointer;
+}
+
+.topnav .btn{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.topnav .btn a {
+    color: black;
+    padding: 8px 16px; 
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+}
+
+.topnav .btn a:hover {
+    background-color:black;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.nav li {
+    display: none;
+}
+
+.nav li a{
+    width: 100%;
+} 
+
+.nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 8%;
+    position: relative;
+    width: 100%;
+} 
+
+.nav img{
+    width: 25%;
+    cursor: pointer;
+}
+
+.nav .menu{
+    text-align: center;
+    width: 55%;
+}
+
+.nav .menu li{
+    font-family: Tahoma;
+    color: black;
+    font-size: 16px;
+    padding-left: 4%;
+    display: inline-block;
+}
+
+.nav .menu li a {
+    width: 100%;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-weight: bold 8px;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.nav .menu li a:hover{
+    color: #00D2C5;
+    cursor: pointer;
+}
+
+.nav .btn{
+    width: 15%;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 3px solid #00D2C5;
+    margin: 1% 1%;
+    padding: 8px 2px;
+}
+
+.nav .btn a{
+    text-decoration: none;
+    color:#00D2C5;
+    font-weight: bold;
+}
+
+.nav .toggle{
+    display: none;
+    width: 12%;
+    justify-content: center;
+}
+
+.nav .toggle img {
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    font-family:Tahoma;
+    color: #00D2C5;
+}
+
+.container .home{
+    display:flex;
+    padding: 8% 8%;
+}
+
+.container .home .main{
+    width: 50%;
+}
+
+.container .home .image
+{
+    width: 50%;  
+    margin: 0% 4%;
+    position: relative;
+}
+
+.container .home .image img{
+    width: 100%;
+}
+
+.home .main h1{
+    color:#00D2C5;
+    font-size: 60px;
+}
+
+.home .main h3{
+    color:black;
+    font-weight: 200;
+    font-size: 22px;
+}
+
+.home .main p{
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.home .main .button{
+    position:relative;  
+    padding-top: 70px;
+    display: flex;
+    width: 100%;
+}
+
+.main .button .playstore{
+    width: 50%;
+}
+
+.main .button .appstore{
+    width: 50%;
+}
+
+.main .button a{
+    width: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Tahoma;
+    color:#00D2C5;
+    font-size: 18px;
+    border: 3px solid #00D2C5;
+    padding: 8px 30px;
+    border-radius: 30px;
+}
+
+.about{
+    font-family: Tahoma;
+    text-align: center;
+    padding: 8% 8%;
+}
+
+.about1 h3{
+    height: 10%;
+    font-size: 25px;
+}
+
+.about1 img{
+    width:100%;
+}
+
+.lorem {
+    display: flex;
+    font-family: Tahoma;
+    text-align: center;
+    padding: 8% 8%;
+    width:100%;
+}
+
+.lorem .lorem1 {
+    width: 100%;
+}
+
+.lorem1 p{
+    text-align: justify;
+    line-height: 43px;
+    color: black;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+
+.lorem1 h2{
+    text-align: center;
+    color:#00D2C5;
+    font-weight: 200;
+    font-size: 40px;
+    width: 100%;
+}
+
+.lorem1 h3{
+    text-align: center;
+    color: black;
+    font-size: 33px;
+    font-weight:200;
+    width: 100%;
+}
+
+.ipsum {
+    display: flex;
+    font-family: Tahoma;
+    padding: 8% 8%;
+}
+
+.ipsum .mobile{
+    width: 50%;
+}
+
+.ipsum .mobile img{
+    width: 100%;
+}
+
+.ipsum1{
+    width: 50%;
+    padding-top: 8%;
+}
+
+.ipsum1 h2{
+    font-family: Tahoma;
+    font-weight: 400;
+    line-height: 80px;
+    font-size: 40px;
+    width: 100%;
+}
+
+.ipsum1 p{
+    color: black;
+    width: 100%;
+    font-family: Tahoma;
+    font-weight: 300;
+    line-height: 29px;
+    font-size: 20px;
+}
+
+.ipsum1 .load{
+    padding-top: 10%;
+    width:100%;
+    display: flex;
+}
+
+.ipsum1 .playstore {
+    width: 50%;
+}
+
+.ipsum1 .appstore {
+    width: 50%;
+}
+
+.ipsum1 .playstore img{
+    width: 70%;
+}
+
+.ipsum1 .appstore img{
+    width: 70%;
+}
+
+.contact{
+    display: flex;
+    padding: 8% 8%;
+}
+
+.contact .contact1{
+    width:50%;
+}
+
+.contact .contact2{
+    width: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.05);
+}
+
+.contact2 h2{
+    margin:8% 8%;
+    color: #00D2C5;
+    font-size: 28px;
+} 
+
+.contact2 .rectangle{
+    margin:8%;
+    width: 84%;
+    color: black;
+    font-family:Tahoma ;
+}
+
+.rectangle span {
+    color:red;
+    font-size: 12px;
+}
+
+.contact2 .rectangle h6{
+    font-size: 20px;
+    line-height: 55px;
+    font-weight: bold 100;
+    color: black;
+    font-family:Tahoma ;
+}
+
+.contact2 .rectangle .btnn{
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 2% 2%;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 3px solid #00D2C5;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 15%;
+}
+
+.contact2 .rectangle .btnn a{
+    text-decoration: none;
+    color:#00D2C5;
+    font-weight: bold;
+}
+
+.contact2 input{
+    background: transparent;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: rgb(2, 0, 0);
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.contact1 .part1{
+    align-content: center;
+}
+
+.contact1 .part1 img{
+    width: 60%;
+}
+
+.contact1 .part1  h3{
+    color:rgb(106, 104, 104);
+    font-size: 30px;
+}
+
+.contact1 .part1 h2{
+    color:black;
+    font-family: Tahoma;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.contact1 .part2{
+    display: flex;
+    margin-top: 20%;
+    justify-content: space-between;
+}
+
+.part2 .box1{
+    width: 49%;
+}
+
+.part2 .box2{
+    width: 50%;
+}
+
+.part2 .box1 img{
+    width: 40%;
+}
+
+.part2 .box2 img{
+    width: 40%;
+}
+
+.part2 .box1 p{
+    color: black;
+    font-size: 20px;
+ }
+
+.part2 .box1 h3{
+    color:#00D2C5;
+    font-size: 22px;
+} 
+
+.part2 .box2 h3{
+    color:#00D2C5;
+    font-size: 22px;
+} 
+
+.part2 .box2 p{
+    color: black;
+    font-size: 20px;
+ }
+
+.contact3 {
+    width: 100%;
+    text-align: center;
+    background-color: #455a64;
+}
+
+.contact3 .box3{
+    width: 100%;
+    background-color:#00D2C5;
+}
+
+.contact3 h3{
+    color:#FFFFFF;
+    padding-top: 4%;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.contact3 .icon{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    padding-top: 4%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.contact3 .icon ion-icon{
+    color:#00D2C5;
+    font-size: 28px;
+    transition: 0.3s;
+    margin-top: 2%;
+    float: left;
+}
+
+.contact3 .box3 h4 {
+    font-size: 20px;
+    padding-top: 1%;
+    font-weight: 400;
+    color: black;
+}
+
+.contact3 .box3 h5 {
+    color: black;
+    padding-bottom: 1%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact3 .box4 {
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+
+.box4 .playstore img{
+    width: 90%;
+}
+
+.box4 .appstore img{
+    width: 90%;
+}
+
+@media only screen and (min-width:1201px) and (max-width:1600px) {
+    .nav li {
+        display: none;
+    }
+
+    .topnav li {
+        display: none;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .ipsum .mobile img{
+        width: 100%;
+        margin-top: 16%;
+    }
+
+    .contact2 .rectangle .btnn{
+        padding: 2% 4%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .icon ion-icon{
+        color:#00D2C5;
+        font-size: 28px;
+        transition: 0.3s;
+        padding-left: 40px;
+        margin-top: 2%;
+        float: left;
+    }
+
+    .contact3 .icon{
+        padding-left: 8%;
+    }
+}
+
+@media only screen  and (min-width:993px) and (max-width:1200px) {
+    .nav li {
+        display: none;
+    }
+
+    .topnav li {
+        display: none;
+    }
+    
+    .topnav {
+        display: none;
+    }
+
+    nav .btn{
+        font-size: 16px;
+    }
+
+    .home .main h1{
+        color:#00D2C5;
+        font-size: 50px;
+    }
+
+    .home .main p{
+        color: black;
+        font-size: 16px;
+    }
+
+    .main .button a{
+        font-size: 16px;
+        padding: 6px 18px;
+        border-radius: 26px;
+    }
+
+    .lorem1 p{
+        font-size: 16px;
+    }
+        
+    .ipsum1 h2{
+        font-size: 30px;
+    }
+    
+    .ipsum1 p {
+        font-size: 16px;
+    }
+
+    .ipsum .mobile img{
+        width: 100%;
+        margin-top: 16%;
+    }
+
+    .contact2 .rectangle .btnn{
+        font-size: 14px;
+        border-radius: 30px;
+        padding: 6px 16px;
+        margin-top: 15%;
+        margin-left: 28%;
+        margin-right: 28%;
+        justify-content: center;
+    }
+
+    .contact3 .icon{
+        margin-left: 30%;
+        margin-right: 30%;
+        padding-top: 2%;
+        padding-left: 8%;
+    }
+
+    .part2 .box1 p{
+        color: black;
+        font-size: 18px;
+     }
+    
+    .part2 .box1 h3{
+        color:#00D2C5;
+        font-size: 20px;
+    } 
+    
+    .part2 .box2 h3{
+        color:#00D2C5;
+        font-size: 20px;
+    } 
+    
+    .part2 .box2 p{
+        color: black;
+        font-size: 18px;
+    }
+
+    .icon ion-icon{
+        font-size: 26px;
+        transition: 0.3s;
+        padding-left: 40px;
+        float: left;
+    }
+
+    .contact3 .icon{
+        padding-left: 4%;
+    }
+
+    .contact3 h3{
+        color:#FFFFFF;
+        padding-top: 4%;
+        font-weight: 100;
+        font-size: 22px;
+    }
+    
+    .contact3 .icon{
+        padding-top: 4%;
+        margin-left: 28%;
+        margin-right: 24%;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:992px) {
+    .nav li {
+        display: none;
+    }
+    
+    .topnav {
+        display: none;
+    }
+
+    .topnav li {
+        display: none;
+    }
+
+    .nav .menu{
+        width: 60%;
+        text-align: center;
+    }
+    
+    .nav .menu li{
+        font-size: 14px;
+    }
+
+    .home .main h1{
+        color:#00D2C5;
+        font-size: 30px;
+    }
+
+    .home .main p{
+        color: black;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    .home .main .button{
+        position:relative;  
+        padding-top: 40px;
+        display: flex;
+        width: 100%;
+    }
+
+    .main .button a{
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 15px;
+        border-radius: 30px;
+    }
+    
+    .lorem1 p{
+        font-size: 14px;
+    }
+
+    .lorem1 h2{
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    .lorem1 h3{
+        font-size: 24px;
+    }
+
+    .ipsum1{
+        width: 50%;
+        padding-top: 4%;
+    }
+
+    .ipsum1 h2{
+        font-size: 28px;
+    }
+    
+    .ipsum1 p {
+        font-size: 14px;
+    }
+
+    .contact2 .rectangle h6{
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    .contact2 input{
+        font-size: 14px;
+    }
+    
+    .contact2 .rectangle .btnn{
+        font-size: 14px;
+        border-radius: 30px;
+        padding: 4px 16px;
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+
+    .contact2 h2{
+        font-size: 18px;
+    } 
+
+    .contact3 .icon{
+        justify-content: center;
+        padding-left: 5%;
+    }
+
+    .contact1 .part1  h3{
+        font-size: 22px;
+    }
+    
+    .contact1 .part1 h2{
+        font-size: 20px;
+    }
+
+    .part2 .box1 p{
+        font-size: 14px;
+    }
+    
+    .part2 .box1 h3{
+        font-size: 16px;
+    } 
+    
+    .part2 .box2 h3{
+        font-size: 16px;
+    } 
+    
+    .part2 .box2 p{
+        font-size: 14px;
+    }
+
+    .contact3 h3{
+        font-weight: 100;
+        font-size: 18px;
+    }
+
+    .contact3 .box3 h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .contact3 .box3 h5 {
+        padding-top: 1%;
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .icon ion-icon{
+        font-size: 26px;
+        transition: 0.3s;
+        padding-left: 40px;
+        float: left;
+    }
+
+    .contact3 .icon{
+        padding-left: 4%;
+    }
+
+    .contact3 h3{
+        color:#FFFFFF;
+        padding-top: 4%;
+        font-weight: 100;
+        font-size: 22px;
+    }
+    
+    .contact3 .icon{
+        padding-top: 4%;
+        margin-left: 18%;
+        margin-right: 24%;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:768px){
+    .topnav {
+        width: 50%;
+        height: 65%;
+        top: 0;
+        right: 0;
+        padding-top: 50px;
+        line-height: 30px;
+        z-index: 999;
+        background-color: #00d2c45d;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+        text-align: center;
+    }
+      
+    .topnav li {
+        top: 0;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        display: flex;
+        text-align: center;
+    }
+    
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .topnav a:hover {
+        background-color: rgba(0, 0, 0, 0.226);
+        color: bold white;
+        cursor: pointer;
+    }
+    
+    .topnav .btn{
+        margin-bottom: 8px;
+        margin-top: 8px;
+        border: 3px solid white;
+        background-color: white;
+        border-radius: 30px;
+    }
+    
+    .topnav .btn a {
+        color: black;
+        padding: 8px 16px; 
+        font-size: 17px;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .topnav .btn a:hover {
+        background-color:black;
+        padding: 10px 16px;
+        color: white;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    .nav li {
+        display: flex;
+    }
+    
+    .nav li a{
+        width: 100%;
+    } 
+
+    .nav .menu{
+        display: none;
+    }
+
+    .nav img{
+        width: 45%;
+        cursor: pointer;
+    }
+
+    .nav .btn{
+        display: none;
+    }
+
+    .home .main h3{
+        color:black;
+        font-weight: 200;
+        font-size: 16px;
+    }
+
+    .home .main h1{
+        color:#00D2C5;
+        font-size: 24px;
+    }
+
+    .home .main p{
+        color: black;
+        font-size: 12px;
+    }
+
+    .home .main .button{
+        position:relative;  
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .main .button a{
+        font-size: 12px;
+        padding: 4px 5px;
+        border-radius: 26px;
+    }
+
+    .lorem1 p{
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .lorem1 h2 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .lorem1 h3{
+        font-size: 24px;
+    }
+
+    .ipsum1{
+        padding-top: 2%;
+    }
+
+    .ipsum1 h2{
+        font-size: 24px;
+    }
+    
+    .ipsum1 p {
+        font-size: 12px;
+    }
+
+    .ipsum .mobile img{
+        width: 100%;
+        margin-top: 16%;
+    }
+
+    .contact2 .rectangle .btnn{
+        font-size: 12px;
+        padding: 6px 16px;
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+
+    .contact3 .icon{
+        margin-left: 30%;
+        margin-right: 30%;
+        padding-top: 2%;
+        font-size: 16px;
+        padding-left: 4%;
+    }
+
+    .contact2 h2{
+        font-size: 18px;
+    } 
+
+    .contact2 .rectangle h6{
+        font-size: 14px;
+        line-height: 50px;
+    }
+
+    .contact2 input{
+        font-size: 14px;
+    }
+
+    .contact1 .part1  h3{
+        font-size: 20px;
+    }
+    
+    .contact1 .part1 h2{
+        font-size: 20px;
+    }
+
+    .part2 .box1 p{
+        font-size: 12px;
+    }
+    
+    .part2 .box1 h3{
+        font-size: 16px;
+    } 
+    
+    .part2 .box2 h3{
+        font-size: 14px;
+    } 
+    
+    .part2 .box2 p{
+        font-size: 12px;
+    }
+
+    .contact3 h3{
+        font-weight: 100;
+        font-size: 16px;
+    }
+
+    .contact3 .box3 h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .icon ion-icon{
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .contact3 .icon{
+        padding-left: 4%;
+    }
+    
+    .contact3 .icon{
+        margin-left: 25%;
+        margin-right: 26%;
+    }
+    
+    .contact3 .box3 h5 {
+        padding-top: 1%;
+        font-size: 14px;
+        font-weight: 200;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:576px) {
+    .topnav {
+        width: 50%;
+        height: 65%;
+        top: 0;
+        right: 0;
+        padding-top: 50px;
+        line-height: 30px;
+        z-index: 999;
+        background-color: #00d2c45d;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+        text-align: center;
+    }
+      
+    .topnav li {
+        top: 0;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        display: flex;
+        text-align: center;
+    }
+    
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .topnav a:hover {
+        background-color: rgba(0, 0, 0, 0.226);
+        color: bold white;
+        cursor: pointer;
+    }
+    
+    .topnav .btn{
+        margin-bottom: 8px;
+        margin-top: 8px;
+        border: 3px solid white;
+        background-color: white;
+        border-radius: 30px;
+    }
+    
+    .topnav .btn a {
+        color: black;
+        padding: 8px 16px; 
+        font-size: 17px;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .topnav .btn a:hover {
+        background-color:black;
+        padding: 10px 16px;
+        color: white;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    .nav li {
+        display: flex;
+    }
+    
+    .nav li a{
+        width: 100%;
+    } 
+
+    .nav .menu{
+        display: none;
+    }
+    
+    .nav img{
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .nav .btn{
+        display: none;
+    }
+
+    .container .home {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    
+    .container .home .main{
+        width: 100%;
+    }
+    
+    .container .home .image
+    {
+        width: 100%;  
+    }
+    
+    .container .home .image img{
+        width: 100%;
+    }
+    
+    .home .main h1{
+        color:#00D2C5;
+        font-size: 30px;
+    }
+    
+    .home .main h3{
+        font-size: 18px;
+    }
+    
+    .home .main p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    .home .main .button{ 
+        padding-top: 50px;
+    }
+
+    .main .button a{
+        font-size: 16px;
+        padding: 6px 5px;
+    }
+    
+    .about h3{
+        font-size: 24px;
+    }
+    
+    .about1 img{
+        width:100%;
+    }
+    
+    .lorem {
+        padding: 8% 8%;
+        width:100%;
+    }
+    
+    .lorem .lorem1 {
+        width: 100%;
+    }
+    
+    .lorem1 p{
+        line-height: 20px;
+        font-size: 14px;
+    }
+    
+    .lorem1 h2{
+        font-size: 26px;
+    }
+    
+    .lorem1 h3{
+        font-size: 20px;
+    }
+    
+    .ipsum {
+        flex-direction: column;
+        gap: 40px;
+        padding: 8% 8%;
+    }
+    
+    .ipsum .mobile{
+        width: 100%;
+    }
+    
+    .ipsum .mobile img{
+        width: 100%;
+    }
+    
+    .ipsum1{
+        width: 100%;
+        padding-top: 0%;
+    }
+    
+    .ipsum1 h2{
+        line-height: 60px;
+        font-size: 26px;
+    }
+    
+    .ipsum1 p{
+        font-weight: 300;
+        line-height: 28px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    
+    .ipsum1 .load{
+        width:100%;
+        display: flex;
+        padding-left: 8%;
+    }
+    
+    .ipsum1 .playstore img{
+        width: 90%;
+    }
+    
+    .ipsum1 .appstore img{
+        width: 90%;
+    }
+    
+    .contact{
+        flex-direction: column;
+        gap: 40px;
+        padding: 8% 8%;
+    }
+    
+    .contact .contact1{
+        width:100%;
+    }
+    
+    .contact .contact2{
+        width: 100%;
+    }
+    
+    .contact2 h2{
+        font-size: 24px;
+    } 
+    
+    .contact2 .rectangle h6{
+        font-size: 16px;
+        line-height: 55px;
+    }
+    
+    .contact2 .rectangle .btnn{
+        font-size: 16px;
+        padding: 1% 1%;
+        margin-left: 24%;
+        margin-right: 24%;
+    }
+    
+    .contact2 input{
+        font-size: 14px;
+    }
+    
+    .contact1 .part1 img{
+        width: 70%;
+    }
+    
+    .contact1 .part1  h3{
+        font-size: 24px;
+    }
+    
+    .contact1 .part1 h2{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    .contact1 .part2{
+        display: flex;
+    }
+
+    .part2 .box1 img{
+        width: 30%;
+    }
+    
+    .part2 .box2 img{
+        width: 30%;
+    }
+    
+    .part2 .box1 p{
+        font-size: 14px;
+     }
+    
+    .part2 .box1 h3{
+        font-size: 18px;
+    } 
+    
+    .part2 .box2 h3{
+        font-size: 18px;
+    } 
+    
+    .part2 .box2 p{
+        font-size: 14px;
+     }
+    
+    .contact3 {
+        width: 100%;
+    }
+    
+    .contact3 h3{
+        font-size: 12px;
+    }
+    
+    .contact3 .icon{
+        margin-left: 28%;
+        margin-right: 28%;
+        justify-content: space-between;
+    }
+    
+    .contact3 .icon ion-icon{
+        font-size: 22px;
+        padding-left: 4%;
+    }
+    
+    .contact3 .box3 h4 {
+        font-size: 16px;
+        padding-top: 2%;
+    }
+    
+    .contact3 .box3 h5 {
+        padding-bottom: 2%;
+        font-size: 14px;
+    }
+    
+    .contact3 .box4 {
+        margin-left: 24%;
+        margin-right: 24%;
+    }
+    
+    .box4 .playstore img{
+        width: 95%;
+    }
+    
+    .box4 .appstore img{
+        width: 95%;
+    }    
+}
